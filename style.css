@@ -42,10 +42,7 @@ body {
   height: 60px;
 }
 
-p {
-  text-align: center;
-}
-
+p,
 #loginForm,
 #registerForm,
 #transactionForm {
@@ -155,7 +152,6 @@ p {
   max-height: 200px;
   align-items: center;
   overflow-x: auto;
-  margin: 0 auto;
   margin-bottom: 20px;
   background-color: #ffffff;
   table-layout: fixed;
