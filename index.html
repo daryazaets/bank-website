@@ -28,7 +28,7 @@
           </div>
           <form id="loginForm" action="javascript:login()">
             <div class="username-container">
-              <input class="input" id="username" name="user" type="text" placeholder="Useraname">
+              <input class="input" id="username" name="user" type="text" placeholder="Username">
             </div>
             <div id="loginError"></div>
             <button class="login-button">Sign in</button>
@@ -40,38 +40,40 @@
     </template>
 
     <template id="register">
-      <div class="register-form-container">
-        <div class="h2-container"> 
-          <h2>Register</h2>
+      <section class="register-form">
+        <div class="register-form-container">
+          <div class="h2-container"> 
+            <h2>Register</h2>
+          </div>
+          <form id="registerForm" action="javascript:register()">
+            <div class="user">
+              <div class="user-input">
+                <input class="input-register" id="user" name="user" type="text" placeholder="Username" maxlength="20" required>
+              </div>
+            </div>
+            <div id="registerError"></div>
+            <div class="currency">
+              <div class="currency-input">
+                <input class="input-register" id="currency" name="currency" type="text"  value="$" maxlength="5" 
+                required>  
+              </div>
+            </div>
+            <div class="description">
+              <div class="description-input">
+                <input class="input-register" id="description" name="description" type="text" placeholder="Description" maxlength="100"> 
+              </div>
+            </div>
+            <div class="balance">
+              <div class="balance-input">
+                <input class="input-register" id="balance" name="balance" type="number" value="0">
+              </div>
+            </div>
+            <div id="registerError"></div>
+            <button class="register-button" type="submit">Register</button>
+          </form>
+          <p>Already have an account?<a class="register-login-link" href="/login" onclick="onLinkClick(event)">Login</a></p>
         </div>
-        <form id="registerForm" action="javascript:register()">
-          <div class="user">
-            <div class="user-input">
-              <input class="input-register" id="user" name="user" type="text" placeholder="Useraname" maxlength="20" required>
-            </div>
-          </div>
-          <div id="registerError"></div>
-          <div class="currency">
-            <div class="currency-input">
-              <input class="input-register" id="currency" name="currency" type="text"  value="$" maxlength="5" 
-              required>  
-            </div>
-          </div>
-          <div class="description">
-            <div class="description-input">
-              <input class="input-register" id="description" name="description" type="text" placeholder="Description" maxlength="100"> 
-            </div>
-          </div>
-          <div class="balance">
-            <div class="balance-input">
-              <input class="input-register" id="balance" name="balance" type="number" value="0">
-            </div>
-          </div>
-          <div id="registerError"></div>
-          <button class="register-button" type="submit">Register</button>
-        </form>
-        <p>Already have an account?<a class="register-login-link" href="/login" onclick="onLinkClick(event)">Login</a></p>
-      </div>
+      </section>
     </template>
     
     <template id="dashboard">
@@ -79,7 +81,7 @@
         <div class="balance-currency-container">
           <div class="balance-text"> <h2>BALANCE:  <span id="balance"></span><span id="currency"></span></h2></div>
         </div>   
-        <div class="description">
+        <div class="description-h2">
           <h2 id="description"></h2>
         </div>
         <div class="table-container">

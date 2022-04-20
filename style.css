@@ -8,10 +8,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-attachment: fixed;
   padding: 0;
   margin: 0;
   height: 100vh;
+  background-attachment: fixed;
 
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(images/wallpaper-v5.png);
@@ -52,25 +52,16 @@ p {
   text-align: center;
 }
 
+.register-form-container,
 .login-form-container {
   align-items: center;
 }
 
-.register-form-container {
-  align-items: center;
-}
-
-.input-transaction {
-  margin: 0 auto;
-}
-
+#app,
 .user-input,
 .currency-label,
-.description-label {
-  margin: 0 auto;
-}
-
-#app {
+.description-label,
+.input-transaction {
   margin: 0 auto;
 }
 
@@ -93,6 +84,7 @@ p {
 
 .username-container {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .login-button,
@@ -101,12 +93,11 @@ p {
   width: 100%;
   height: 35px;
   border: none;
-  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 20px;
   align-items: center;
   background: #7da9ff;
   color: #ffffff;
-
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
@@ -134,7 +125,6 @@ p {
   width: 250px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 20px;
   padding: 5px;
   border-radius: 20px;
   align-items: center;
@@ -147,27 +137,28 @@ p {
 .add-transaction-link {
   display: flex;
   justify-content: center;
-  text-decoration: none;
   cursor: pointer;
   color: #ffffff;
+  text-decoration: none;
 }
 
-.description {
+.description-h2 {
   text-align: center;
+  margin-bottom: 20px;
   color: #6898f7;
   font-weight: 300;
   font-size: 14px;
   line-height: 28px;
-  margin-bottom: 20px;
 }
 
 .table-container {
-  max-height: 500px;
+  max-height: 200px;
+  align-items: center;
   overflow-x: auto;
   margin: 0 auto;
+  margin-bottom: 20px;
   background-color: #ffffff;
   table-layout: fixed;
-  align-items: center;
 }
 
 th,
@@ -202,7 +193,6 @@ td {
 .balance-text {
   display: inline-block;
   width: 400px;
-
   margin-bottom: 20px;
   color: #4f7fe0;
   font-weight: 300;
