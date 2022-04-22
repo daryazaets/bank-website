@@ -25,15 +25,11 @@ body {
   display: none;
 }
 
-.h2-container {
+.h2-container h2 {
   position: relative;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   color: #000000;
   text-align: center;
-}
-
-.h2-container h2 {
-  margin: 0;
 }
 
 .logo-container {
@@ -50,7 +46,8 @@ p,
 }
 
 .register-form-container,
-.login-form-container {
+.login-form-container,
+.dashboard-container-form {
   align-items: center;
 }
 
@@ -151,7 +148,7 @@ p,
 }
 
 .table-container {
-  max-height: 200px;
+  max-height: 250px;
   align-items: center;
   overflow-x: auto;
   margin-bottom: 20px;

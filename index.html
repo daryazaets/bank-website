@@ -51,8 +51,7 @@
             <div id="registerError"></div>
             <div class="currency">
               <div class="currency-input">
-                <input class="input-register" id="currency" name="currency" type="text"  value="$" maxlength="5" 
-                required>  
+                <input class="input-register" id="currency" name="currency" type="text"  value="$" maxlength="5" required>  
               </div>
             </div>
             <div class="description">
@@ -75,29 +74,31 @@
     
     <template id="dashboard">
       <section class="dashboard-container">
-        <div class="balance-currency-container">
-          <div class="balance-text"> <h2>BALANCE:  <span id="balance"></span><span id="currency"></span></h2></div>
-        </div>   
-        <div class="description-h2">
-          <h2 id="description"></h2>
+        <div class="dashboard-container-form">
+          <div class="balance-currency-container">
+            <div class="balance-text"> <h2>BALANCE:  <span id="balance"></span><span id="currency"></span></h2></div>
+          </div>   
+          <div class="description-h2">
+            <h2 id="description"></h2>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr class="date-object-amount">
+                  <th>Date</th>
+                  <th>Object</th>
+                  <th>Amount</th>
+                </tr>            
+              </thead>
+              <tbody class="transactions" id="transactions"></tbody>
+            </table>
+          </div>
+          <div class="balance-container">
+            <a class="add-transaction-link" id="add-transaction-link" href="/transaction" onclick="onLinkClick(event)">
+              (+) Add transaction
+            </a> 
+          </div>  
         </div>
-        <div class="table-container">
-        <table>
-          <thead>
-            <tr class="date-object-amount">
-              <th>Date</th>
-              <th>Object</th>
-              <th>Amount</th>
-            </tr>            
-          </thead>
-          <tbody class="transactions" id="transactions"></tbody>
-        </table>
-      </div>
-        <div class="balance-container">
-          <a class="add-transaction-link" id="add-transaction-link" href="/transaction" onclick="onLinkClick(event)">
-            (+) Add transaction
-          </a> 
-        </div>  
       </section>
     </template>
     
