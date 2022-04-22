@@ -9,11 +9,9 @@
   </head>
   <body>
     <div class="navigation">
-      <div class="navigation-link">
-        <a class="navigation-link-header" id="header-login-link" href="/login" onclick="onLinkClick(event)">Login</a>
-        <a class="navigation-link-header" id="header-register-link" href="/register" onclick="onLinkClick(event)">Register</a>
-        <a class="navigation-link-header" id="header-logout-link" onclick="logout()">Logout</a>
-      </div>
+      <a class="navigation-link-header" id="header-login-link" href="/login" onclick="onLinkClick(event)">Login</a>
+      <a class="navigation-link-header" id="header-register-link" href="/register" onclick="onLinkClick(event)">Register</a>
+      <a class="navigation-link-header" id="header-logout-link" onclick="logout()">Logout</a>
     </div>
     <div id="app"></div>
 
@@ -43,26 +41,19 @@
             <h2>Register</h2>
           </div>
           <form id="registerForm" action="javascript:register()">
-            <div class="user">
-              <div class="user-input">
-                <input class="input-register" id="user" name="user" type="text" placeholder="Username" maxlength="20" required>
-              </div>
+            <div class="user-input">
+              <input class="input-register" id="user" name="user" type="text" placeholder="Username" maxlength="20" required>
             </div>
             <div id="registerError"></div>
-            <div class="currency">
-              <div class="currency-input">
-                <input class="input-register" id="currency" name="currency" type="text"  value="$" maxlength="5" required>  
-              </div>
+            <div class="currency-input">
+              <input class="input-register" id="currency" name="currency" type="text"  value="$" maxlength="5" required>  
             </div>
-            <div class="description">
-              <div class="description-input">
-                <input class="input-register" id="description" name="description" type="text" placeholder="Description" maxlength="100"> 
-              </div>
+            <div class="description-input">
+              <input class="input-register" id="description" name="description" type="text" placeholder="Description" maxlength="100"> 
             </div>
-            <div class="balance">
-              <div class="balance-input">
-                <input class="input-register" id="balance" name="balance" type="number" value="0">
-              </div>
+            <div id="registerError"></div>
+            <div class="balance-input">
+              <input class="input-register" id="balance" name="balance" type="number" value="100">
             </div>
             <div id="registerError"></div>
             <button class="register-button" type="submit">Register</button>
@@ -75,9 +66,9 @@
     <template id="dashboard">
       <section class="dashboard-container">
         <div class="dashboard-container-form">
-          <div class="balance-currency-container">
-            <div class="balance-text"> <h2>BALANCE:  <span id="balance"></span><span id="currency"></span></h2></div>
-          </div>   
+          <div class="balance-text"> 
+            <h2>BALANCE:  <span id="balance"></span><span id="currency"></span></h2>
+          </div>
           <div class="description-h2">
             <h2 id="description"></h2>
           </div>
@@ -118,21 +109,15 @@
               <img class="cancel-image" src="/images/x-mark.png" alt="cancel"/>
             </button>
           </div>
-          <div class="header-add-transaction">
-            <div class="h2-container"> 
-              <h2>Add transaction</h2> 
-            </div>
+          <div class="h2-container"> 
+            <h2>Add transaction</h2> 
           </div>
           <form id="transactionForm" action="javascript:transaction()">
-            <div class="date-container">
-              <div class="date-input">
-                <input class="input-transaction" id="date" name="date" type="date" placeholder="Date" required>
-              </div>
-            </div>
-            <div class="currency">
-              <div class="object-input">
-                <input class="input-transaction" id="amount" name="amount" type="number" placeholder="Amount" min="-1000000" max="1000000" required>  
-              </div>
+            <div class="date-input">
+              <input class="input-transaction" id="date" name="date" type="date"      placeholder="Date" required>
+            </div> 
+            <div class="object-input">
+              <input class="input-transaction" id="amount" name="amount" type="number" placeholder="Amount" min="-1000000" max="1000000" required>  
             </div>
             <div class="amount-input">
               <input class="input-transaction" id="description" name="object" type="text" placeholder="Object" maxlength="100" required> 
