@@ -40,8 +40,7 @@ body {
 p,
 #loginForm,
 #registerForm,
-#transactionForm,
-.balance-currency-container {
+#transactionForm {
   text-align: center;
 }
 
@@ -76,19 +75,15 @@ p,
   padding: 50px;
 }
 
-.username-container {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
 .login-button,
 .register-button,
 .transaction-button {
   width: 100%;
   height: 35px;
+  align-items: center;
+  margin-bottom: 20px;
   border: none;
   border-radius: 20px;
-  align-items: center;
   background: #7da9ff;
   color: #ffffff;
   font-weight: 300;
@@ -96,19 +91,14 @@ p,
   line-height: 28px;
 }
 
-.login-button,
-.register-button,
-.input-register,
-.input-transaction {
-  margin-bottom: 20px;
-}
-
 .input,
 .input-register,
-.input-transaction {
+.input-transaction,
+.username-container {
   width: 100%;
   height: 35px;
   padding-left: 10px;
+  margin-bottom: 20px;
 }
 
 .register-login-link {
@@ -190,6 +180,7 @@ td {
   font-size: 20px;
   line-height: 28px;
   font-style: bold;
+  text-align: center;
 }
 
 .cancel-button-container {
