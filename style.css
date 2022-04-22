@@ -44,7 +44,8 @@ body {
 p,
 #loginForm,
 #registerForm,
-#transactionForm {
+#transactionForm,
+.balance-currency-container {
   text-align: center;
 }
 
@@ -99,7 +100,9 @@ p,
 }
 
 .login-button,
-.register-button {
+.register-button,
+.input-register,
+.input-transaction {
   margin-bottom: 20px;
 }
 
@@ -109,11 +112,6 @@ p,
   width: 100%;
   height: 35px;
   padding-left: 10px;
-}
-
-.input-register,
-.input-transaction {
-  margin-bottom: 20px;
 }
 
 .register-login-link {
@@ -184,10 +182,6 @@ td {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
-}
-
-.balance-currency-container {
-  text-align: center;
 }
 
 .balance-text {
